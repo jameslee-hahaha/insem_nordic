@@ -1,5 +1,4 @@
 ## Nordic Example code(INSEM Inc)
-
 ---
 - **NCS200_ble_AT_command_nrf52dk**
 
