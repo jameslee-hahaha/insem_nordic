@@ -43,3 +43,22 @@
   - AT+TXPWR=+x\\r\\n or AT+TXPWR=-xx\\r\\n : set tx power
   - AT+NAME=xxxxxx\\r\\n : set BLE device name   
 
+---
+- **ble_minimize_current_solution**
+
+1. **Description** : This example is started from ble_app_uart example. The target of this example is what is should consider to reduce current consumption. So if you have interests about this kinds of things, Please refer to this example.
+
+2. **Requirements**
+  - DK : nRF52 DK
+  - SDK : **nRF5 SDK 17.1.0**
+3. **Notice** : if you check out comments below, you can find out what is changed to minimize current consumption.         
+  - STEP_1 Log Disable
+  - STEP_2 idle Sleep
+  - STEP_3 DCDC Mode enable
+  - STEP_4 Advertising interval
+  - STEP_5 Non Connectable Advertising(**if your device doesn't need to connect any other BLE central device, use 'ble_advertising_non_connectable.c'**)
+  - STEP_6 Connection Parameter (Connection interval, Slave Latency, Supervisor timeout)
+  - STEP_7 TX Power
+  - STEP_8 Advertising Stop / Start
+  - STEP_9 System Off Sleep
+  - STEP_10 UART Disable 
