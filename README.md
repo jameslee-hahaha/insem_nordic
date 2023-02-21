@@ -1,1 +1,2 @@
-# Nordic Example produced by INSEM Inc.
+# Nordic Example code(INSEM Inc)
+1. 
