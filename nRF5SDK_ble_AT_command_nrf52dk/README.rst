@@ -10,7 +10,7 @@ The AT command for BLE sample demonstrates how to use the AT command to change B
 Requirements
 ************
 
-Software Delopment Kit : **NCS 2.0.0**
+Software Delopment Kit : **nRF5 SDK 17.1.0**
 
 Development Kit : **nRF52 DK**
 
