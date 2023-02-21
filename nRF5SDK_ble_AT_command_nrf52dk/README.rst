@@ -1,11 +1,11 @@
-AT command example for BLE
+BLE AT command example
 ##########################
 
 .. contents::
    :local:
    :depth: 2
 
-The AT command for BLE sample demonstrates how to use the AT command to change BLE operation.It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
+BLE AT command sample demonstrates how to use the AT command to change BLE operation.It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
 Requirements
 ************
