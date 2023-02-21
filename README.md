@@ -3,7 +3,7 @@
 ---
 - **NCS200_ble_AT_command_nrf52dk**
 
-   - **Description** : This example is based on *ble peripheral uart*. if user want to change some operation regarding BLE, BLE AT command can be used. Like a putty or tera term can be used to sent commands.
+   - **Description** : This example is based on *ble peripheral uart*. if user want to change some operation regarding BLE, BLE AT command can be used. Like a putty or tera term, these can be used to senD commands.
 
    - **Requirements**
   
@@ -40,7 +40,7 @@
 ---
 - **nRF5SDK_ble_AT_command_nrf52dk**
 
-   - **Description** : This example is based on *ble app uart*. if user want to change some operation regarding BLE, BLE AT command can be used. Like a putty or tera term can be used to sent commands.
+   - **Description** : This example is based on *ble app uart*. if user want to change some operation regarding BLE, BLE AT command can be used. Like a putty or tera term, these can be used to send commands.
 
    - **Requirements**
   
