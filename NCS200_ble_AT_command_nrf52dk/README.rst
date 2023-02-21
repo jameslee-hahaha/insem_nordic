@@ -54,7 +54,6 @@ Testing
 After programming the sample to your development kit, complete the following steps to test it:
 
 1. Connect the device to the computer to access UART 0.
-
    On nRF52 DK, UART 0 is forwarded as a COM port (Windows) or ttyACM device (Linux) after you connect the development kit over USB.
 #. Connect terminal
 #. Type AT commands and Check operations. 
