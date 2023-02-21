@@ -6,7 +6,7 @@
 
 2. **Requirements**
   - DK : nRF52DK
-  - SDK : NCS 2.0.0
+  - SDK : **NCS 2.0.0**
 3. **Avaiable AT commands**     
   - AT?\\r\\n : checks AT command mode
   - AT+VER?\\r\\n : returns AT command version
@@ -28,7 +28,7 @@
 
 2. **Requirements**
   - DK : nRF52DK
-  - SDK : nRF5 SDK 17.1.0
+  - SDK : **nRF5 SDK 17.1.0**
 3. **Avaiable AT commands**         
   - AT?\\r\\n : checks AT command mode
   - AT+VER?\\r\\n : returns AT command version
