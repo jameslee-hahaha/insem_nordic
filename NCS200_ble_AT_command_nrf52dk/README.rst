@@ -1,210 +1,63 @@
 .. _peripheral_uart:
 
-Bluetooth: Peripheral UART
+AT command example for BLE
 ##########################
 
 .. contents::
    :local:
    :depth: 2
 
-The Peripheral UART sample demonstrates how to use the :ref:`nus_service_readme`.
-It uses the NUS service to send data back and forth between a UART connection and a Bluetooth® LE connection, emulating a serial port over Bluetooth LE.
+The AT command for BLE sample demonstrates how to use the AT command to change BLE operation.It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
 Requirements
 ************
 
-The sample supports the following development kits:
+Software Delopment Kit : **NCS 2.0.0**
 
-.. table-from-sample-yaml::
+Development Kit : **nRF52 DK**
 
-.. note::
-   * The boards ``nrf52dk_nrf52810``, ``nrf52840dk_nrf52811``, and ``nrf52833dk_nrf52820`` only support the `Minimal sample variant`_.
-   * When used with :ref:`zephyr:thingy53_nrf5340`, the sample supports the MCUboot bootloader with serial recovery and SMP DFU over Bluetooth.
-     Thingy:53 has no built-in SEGGER chip, so the UART 0 peripheral is not gated to a USB CDC virtual serial port.
+Avaiable AT commands
+************
 
-The sample also requires a smartphone or tablet running a compatible application.
-The `Testing`_ instructions refer to `nRF Connect for Mobile`_, but you can also use other similar applications (for example, `nRF Blinky`_ or `nRF Toolbox`_).
+1. AT?\\r\\n : checks AT command mode
+#. AT+VER?\\r\\n : returns AT command version
+#. AT+ROLE?\\r\\n : return current BLE mode(peripheral)
+#. AT+ADVSTOP\\r\\n : stops BLE advertising
+#. AT+ADVSTART\\r\\n : start BLE advertising
+#. AT+ADVINT?\\r\\n : returns current advertising interval
+#. AT+TXPWR?\\r\\n : returns current tx power
+#. AT+NAME?\\r\\n : returns current BLE device name
+#. AT+SLEEP\\r\\n : enters system off mode after setup wake up
 
-You can also test the application with the :ref:`central_uart` sample.
-See the documentation for that sample for detailed instructions.
+**To change advertising interval**, Please send AT commands like below.
 
-.. note::
-   |thingy53_sample_note|
+a. AT+ADVSTOP\\r\\n
+#. AT+ADVINT=xxxx\\r\\n : set advertising interval
 
-   The sample also enables an additional USB CDC ACM port that is used instead of UART 0.
-   Because of that, it uses a separate USB Vendor and Product ID.
+After this, advertising will be started automatically.
 
-Overview
-********
+**To change Tx power**, Please send AT commands like below.
 
-When connected, the sample forwards any data received on the RX pin of the UART 0 peripheral to the Bluetooth LE unit.
-On Nordic Semiconductor's development kits, the UART 0 peripheral is typically gated through the SEGGER chip to a USB CDC virtual serial port.
+a. AT+ADVSTOP\\r\\n
+#. AT+TXPWR=+x\\r\\n or AT+TXPWR=-xx\\r\\n : set tx power
 
-Any data sent from the Bluetooth LE unit is sent out of the UART 0 peripheral's TX pin.
+After this, advertising will be started automatically.
 
-.. note::
-   Thingy:53 uses the second instance of USB CDC ACM class instead of UART 0, because it has no built-in SEGGER chip that could be used to gate UART 0.
+**To change device name**, Please send AT commands like below.
 
-.. _peripheral_uart_debug:
+a. AT+ADVSTOP\\r\\n
+#. AT+NAME=xxxxxx\\r\\n : set BLE device name
 
-Debugging
-=========
-
-In this sample, the UART console is used to send and read data over the NUS service.
-Debug messages are not displayed in this UART console.
-Instead, they are printed by the RTT logger.
-
-If you want to view the debug messages, follow the procedure in :ref:`testing_rtt_connect`.
-
-.. note::
-   On the Thingy:53, debug logs are provided over the USB CDC ACM class serial port, instead of using RTT.
-
-FEM support
-***********
-
-.. include:: /includes/sample_fem_support.txt
-
-.. _peripheral_uart_minimal_ext:
-
-Minimal sample variant
-======================
-
-You can build the sample with a minimum configuration as a demonstration of how to reduce code size and RAM usage.
-This variant is available for resource-constrained boards.
-
-See :ref:`peripheral_uart_sample_activating_variants` for details.
-
-.. _peripheral_uart_cdc_acm_ext:
-
-USB CDC ACM extension
-=====================
-
-For the boards with the USB device peripheral, you can build the sample with support for the USB CDC ACM class serial port instead of the physical UART.
-This build uses the sample-specific UART async adapter module that acts as a bridge between USB CDC ACM and Zephyr's UART asynchronous API used by the sample.
-See :ref:`peripheral_uart_sample_activating_variants` for details about how to build the sample with this extension using the :file:`prj_cdc.conf`.
-
-Async adapter experimental module
-   The default sample configuration uses the UART async API.
-   The UART async adapter creates and initializes an instance of the async module.
-   This is needed because the USB CDC ACM implementation provides only the interrupt interface.
-   The adapter uses data provided in the :c:struct:`uart_async_adapter_data` to connect to the UART device that does not use the asynchronous interface.
-
-   The module requires the :kconfig:option:`CONFIG_BT_NUS_UART_ASYNC_ADAPTER` to be set to ``y``.
-   For more information about the adapter, see the :file:`uart_async_adapter` source files available in the :file:`peripheral_uart/src` directory.
-
-User interface
-**************
-
-The user interface of the sample depends on the hardware platform you are using.
-
-Development kits
-================
-
-LED 1:
-   Blinks with a period of 2 seconds, duty cycle 50%, when the main loop is running (device is advertising).
-
-LED 2:
-   On when connected.
-
-Button 1:
-   Confirm the passkey value that is printed in the debug logs to pair/bond with the other device.
-
-Button 2:
-   Reject the passkey value that is printed in the debug logs to prevent pairing/bonding with the other device.
-
-Thingy:53
-=========
-
-RGB LED:
-   The RGB LED channels are used independently to display the following information:
-
-   * Red channel blinks with a period of two seconds, duty cycle 50%, when the main loop is running (device is advertising).
-   * Green channel displays if device is connected.
-
-Button:
-   Confirm the passkey value that is printed in the debug logs to pair/bond with the other device.
-   Thingy:53 has only one button, therefore the passkey value cannot be rejected by pressing a button.
-
-Building and running
-********************
-
-.. |sample path| replace:: :file:`samples/bluetooth/peripheral_uart`
-
-.. include:: /includes/build_and_run.txt
-
-.. _peripheral_uart_sample_activating_variants:
-
-Activating sample extensions
-============================
-
-To activate the optional extensions supported by this sample, modify :makevar:`OVERLAY_CONFIG` in the following manner:
-
-* For the minimal build variant, set :file:`prj_minimal.conf`.
-* For the USB CDC ACM extension, set :file:`prj_cdc.conf`.
-  Additionally, you need to set :makevar:`DTC_OVERLAY_FILE` to :file:`usb.overlay`.
-
-See :ref:`cmake_options` for instructions on how to add this option.
-For more information about using configuration overlay files, see :ref:`zephyr:important-build-vars` in the Zephyr documentation.
-
-.. _peripheral_uart_testing:
+After this, advertising will be started automatically.
 
 Testing
-=======
+********************
 
 After programming the sample to your development kit, complete the following steps to test it:
 
 1. Connect the device to the computer to access UART 0.
-   If you use a development kit, UART 0 is forwarded as a COM port (Windows) or ttyACM device (Linux) after you connect the development kit over USB.
-   If you use Thingy:53, you must attach the debug board and connect an external USB to UART converter to it.
-#. |connect_terminal|
-#. Optionally, you can display debug messages. See :ref:`peripheral_uart_debug` for details.
-#. Reset the kit.
-#. Observe that **LED 1** is blinking and that the device is advertising with the device name that is configured in :kconfig:option:`CONFIG_BT_DEVICE_NAME`.
-#. Observe that the text "Starting Nordic UART service example" is printed on the COM listener running on the computer.
-#. Connect to the device using nRF Connect for Mobile.
-   Observe that **LED 2** is on.
-#. Optionally, pair or bond with the device with MITM protection.
-   This requires using the passkey value displayed in debug messages.
-   See :ref:`peripheral_uart_debug` for details on how to access debug messages.
-   To confirm pairing or bonding, press **Button 1** on the device and accept the passkey value on the smartphone.
-#. In the application, observe that the services are shown in the connected device.
-#. Select the UART RX characteristic value in nRF Connect.
-   You can write to the UART RX and get the text displayed on the COM listener.
-#. Type '0123456789' and tap :guilabel:`SEND`.
-   Verify that the text "0123456789" is displayed on the COM listener.
-#. To send data from the device to your phone or tablet, enter any text, for example, "Hello", and press Enter to see it on the COM listener.
-   Observe that a notification is sent to the peer.
-#. Disconnect the device in nRF Connect.
-   Observe that **LED 2** turns off.
 
-Dependencies
-************
+   On nRF52 DK, UART 0 is forwarded as a COM port (Windows) or ttyACM device (Linux) after you connect the development kit over USB.
+#. Connect terminal
+#. Type AT commands and Check operations. 
 
-This sample uses the following sample-specific library:
-
-* :file:`uart_async_adapter` at :file:`peripheral_uart/src`
-
-This sample uses the following |NCS| libraries:
-
-* :ref:`nus_service_readme`
-* :ref:`dk_buttons_and_leds_readme`
-
-In addition, it uses the following Zephyr libraries:
-
-* ``include/zephyr/types.h``
-* ``boards/arm/nrf*/board.h``
-* :ref:`zephyr:kernel_api`:
-
-  * ``include/kernel.h``
-
-* :ref:`zephyr:api_peripherals`:
-
-   * ``incude/gpio.h``
-   * ``include/uart.h``
-
-* :ref:`zephyr:bluetooth_api`:
-
-  * ``include/bluetooth/bluetooth.h``
-  * ``include/bluetooth/gatt.h``
-  * ``include/bluetooth/hci.h``
-  * ``include/bluetooth/uuid.h``
