@@ -2,7 +2,7 @@
 ---
 - **NCS200_ble_AT_command_nrf52dk**
 
-1. **Description** : The AT command for BLE sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
+1. **Description** : BLE AT command sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
 2. **Requirements**
   - DK : nRF52DK
@@ -24,7 +24,7 @@
 ---
 - **nRF5SDK_ble_AT_command_nrf52dk**
 
-1. **Description** : The AT command for BLE sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
+1. **Description** : BLE AT command sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
 2. **Requirements**
   - DK : nRF52DK
