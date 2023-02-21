@@ -1,6 +1,6 @@
-## Nordic Example code(INSEM Inc)
+# Nordic Example code(INSEM Inc)
 ---
-- **NCS200_ble_AT_command_nrf52dk**
+## **NCS200_ble_AT_command_nrf52dk**
 
 1. **Description** : BLE AT command sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
@@ -22,7 +22,7 @@
   - AT+NAME=xxxxxx\\r\\n : set BLE device name
 
 ---
-- **nRF5SDK_ble_AT_command_nrf52dk**
+## **nRF5SDK_ble_AT_command_nrf52dk**
 
 1. **Description** : BLE AT command sample demonstrates how to use the AT command to change BLE operation. It sends AT command and receive a response between a UART connection. If it's connected with BLE central device, normal NUS service works.
 
@@ -44,7 +44,7 @@
   - AT+NAME=xxxxxx\\r\\n : set BLE device name   
 
 ---
-- **ble_minimize_current_solution**
+## **ble_minimize_current_solution**
 
 1. **Description** : This example is started from ble_app_uart example. The target of this example is what is should consider to reduce current consumption. So if you have interests about this kinds of things, Please refer to this example.
 
