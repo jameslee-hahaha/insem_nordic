@@ -1,5 +1,3 @@
-.. _peripheral_uart:
-
 AT command example for BLE
 ##########################
 
