@@ -1,4 +1,4 @@
-Minimizing current consumption example of BLE device
+Minimizing current consumption of BLE peripheral device
 ##########################
 
 .. contents::
