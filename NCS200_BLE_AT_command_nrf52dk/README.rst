@@ -53,9 +53,9 @@ a. AT+ADVSTOP\\r\\n
 Testing
 ********************
 
-nRF52 DK에 이 예제를 programming한 후 아래 순서로 진행합니다.
+nRF52 DK에 download한 후 아래 순서로 진행합니다.
 
-1. nRF52 DK를 USB로 연결 한 후 power on
+1. nRF52 DK를 USB로 PC와 연결 후 power on 합니다.
 #. PC에서 테라텀과 같은 외부 시리얼 통신 프로그램을 실행합니다.
 #. 시리얼 통신 프로그램에서 AT command를 입력하여 테스트를 진행합니다. 
 
