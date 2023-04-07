@@ -1,4 +1,4 @@
-HTTP Sever connection by IP addres on serial LTE modem example
+HTTP Sever connection by IP address on serial LTE modem example
 ##########################
 
 .. contents::
