@@ -16,7 +16,7 @@
 ---
 ## **nRF5SDK_BLE_AT_command_nrf52dk**
 
-1. **Description** : 
+1. **Description**
 
      이 예제는 외부 시리얼 통신(UART) 프로그램을 사용하여 **BLE 동작(Advertising interval, Tx power 등)을 변경하기 위한 프로젝트** 입니다. 
      
