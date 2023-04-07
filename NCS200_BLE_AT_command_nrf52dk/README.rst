@@ -29,26 +29,26 @@ Avaiable AT commands
 #. AT+NAME?\\r\\n : returns current BLE device name
 #. AT+SLEEP\\r\\n : enters system off mode after setup wake up
 
-**Aadvertising interval**을 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
+**Advertising interval**을 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
 
 a. AT+ADVSTOP\\r\\n
 #. AT+ADVINT=xxxx\\r\\n : set advertising interval
 
-위 AT command 입력 후 변경된 Advertising interval로 자동으로 Advertising이 다시 시작됩니다.
+위 AT command 입력 후 변경된 Advertising interval로 Advertising이 다시 시작됩니다.
 
 **Tx power**를 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
 
 a. AT+ADVSTOP\\r\\n
 #. AT+TXPWR=+x\\r\\n or AT+TXPWR=-xx\\r\\n : set tx power
 
-위 AT command 입력 후 변경된 Tx power로 자동으로 Advertising이 다시 시작됩니다.
+위 AT command 입력 후 변경된 Tx power로 Advertising이 다시 시작됩니다.
 
 **Device name**을 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
 
 a. AT+ADVSTOP\\r\\n
 #. AT+NAME=xxxxxx\\r\\n : set BLE device name
 
-위 AT command 입력 후 변경된 Device name으로 자동으로 Advertising이 다시 시작됩니다.
+위 AT command 입력 후 변경된 Device name으로 Advertising이 다시 시작됩니다.
 
 Testing
 ********************
