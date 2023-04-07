@@ -25,7 +25,7 @@
 
 2. **Reference example**
 
-     NCS(nRF Connect SDK) serial lte modem
+     NCS(nRF Connect SDK) serial LTE modem
 
 
 ---
