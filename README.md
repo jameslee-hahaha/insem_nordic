@@ -10,7 +10,7 @@
 
 2. **Reference example**
 
-     NCS BLE peripheral uart
+     NCS(nRF Connect SDK) BLE peripheral uart
 
 
 ---
@@ -24,7 +24,7 @@
 
 2. **Reference example**
 
-     NCS serial lte modem
+     NCS(nRF Connect SDK) serial lte modem
 
 
 ---
