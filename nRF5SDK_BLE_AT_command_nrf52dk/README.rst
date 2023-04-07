@@ -5,7 +5,7 @@ BLE AT command example
    :local:
    :depth: 2
 
-이 예제는 외부 시리얼 통신(UART) 프로그램을 사용하여 BLE 동작(Advertising interval, Tx power 등)을 변경하기 위한 프로젝트 입니다.
+이 예제는 PC에서 터미널 프로그램을 사용하여 BLE 동작(Advertising interval, Tx power 등)을 변경하기 위한 프로젝트 입니다.
 
 BLE 동작 변경을 위해 AT command를 사용하며 nRF52 DK로부터 AT command에 대한 response를 확인할 수 있으며 BLE 동작 변경은 Central 장치와 connection하지 않은 상태에서 가능하며 Central 장치와 connection이 되었을 경우 일반적인 BLE 장치로서 동작합니다.
 
@@ -53,10 +53,9 @@ a. AT+ADVSTOP\\r\\n
 Testing
 ********************
 
-After programming the sample to your development kit, complete the following steps to test it:
+nRF52 DK에 download한 후 아래 순서로 진행합니다.
 
-1. Connect the device to the computer to access UART 0.
-   On nRF52 DK, UART 0 is forwarded as a COM port (Windows) or ttyACM device (Linux) after you connect the development kit over USB.
-#. Connect terminal
-#. Type AT commands and Check operations. 
+1. nRF52 DK를 USB로 PC와 연결 후 power on 합니다.
+#. PC에서 테라텀과 같은 터미널 프로그램을 실행합니다.
+#. 터미널 입력창에서 AT command를 입력하여 테스트를 진행합니다. 
 
