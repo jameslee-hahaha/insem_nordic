@@ -31,7 +31,8 @@
 ## **nRF5SDK_BLE_minimize_current_nrf52dk**
 
 1. **Description**
-     이 예제는 BLE peripheral 장치의 current consumption을 최소화 하기 위한 firwmare 수정 부분을 알려드리는 프로젝트 입니다.
+
+     이 예제는 BLE peripheral 장치의 current consumption을 최소화 하기 위한 firwmare 수정 내용을 추가한 프로젝트 입니다.
 
 2. **Reference example**
 
