@@ -53,10 +53,9 @@ a. AT+ADVSTOP\\r\\n
 Testing
 ********************
 
-After programming the sample to your development kit, complete the following steps to test it:
+nRF52 DK에 이 예제를 programming한 후 아래 순서로 진행합니다.
 
-1. Connect the device to the computer to access UART 0.
-   On nRF52 DK, UART 0 is forwarded as a COM port (Windows) or ttyACM device (Linux) after you connect the development kit over USB.
-#. Connect terminal
-#. Type AT commands and Check operations. 
+1. nRF52 DK를 USB로 연결 한 후 power on
+#. PC에서 테라텀과 같은 외부 시리얼 통신 프로그램을 실행합니다.
+#. 시리얼 통신 프로그램에서 AT command를 입력하여 테스트를 진행합니다. 
 
