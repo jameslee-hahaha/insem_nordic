@@ -12,9 +12,9 @@ BLE 동작 변경을 위해 AT command를 사용하며 nRF52 DK로부터 AT comm
 Requirements
 ************
 
-Software Delopment Kit : **NCS 2.0.0**
+Software Delopment Kit : NCS 2.0.0
 
-Development Kit : **nRF52 DK**
+Development Kit : nRF52 DK
 
 Avaiable AT commands
 ************
