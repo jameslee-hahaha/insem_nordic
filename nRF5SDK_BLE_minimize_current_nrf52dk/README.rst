@@ -5,7 +5,7 @@ Minimizing current consumption example of BLE device
    :local:
    :depth: 2
 
-This example is started from ble_app_uart example. The target of this example is what is should consider to reduce current consumption. So if you have interests about this kinds of things, Please refer to this example. 
+이 예제는 BLE peripheral 장치의 current consumption을 최소화 하기 위한 firwmare 수정 부분에 대해 알려드리는 프로젝트 입니다.
 
 Requirements
 ************
@@ -16,7 +16,7 @@ Development Kit : **nRF52 DK**
 
 Notice
 ************
-if you check out comments below, you can find out what is changed to minimize current consumption.
+예제에서 아래 list된 항목들의 주석(comment)을 확인하면 Ble peripheral device의 current consumption을 최소화 하기 위해서 수정된 부분을 확인할 수 있습니다.
 
 1. STEP_1 Log Disable
 #. STEP_2 idle Sleep
