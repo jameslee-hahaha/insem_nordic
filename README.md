@@ -24,7 +24,7 @@
 
 2. **Reference example**
 
-     NCS BLE peripheral uart
+     NCS serial lte modem
 
 
 ---
