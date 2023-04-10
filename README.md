@@ -29,6 +29,19 @@
 
 
 ---
+## **nRF5SDK_BLE_2_uarts_nrf52840dk**
+
+1. **Description**
+
+     이 예제는 **BLE peripheral example에서 2개의 uart를 사용**하기 위해 테스트로 구성한 프로젝트 입니다. nRF52840 DK 기준으로 구성하였습니다.
+ 
+     
+2. **Reference example**
+
+     nRF5 SDK ble app uart
+     
+     
+---
 ## **nRF5SDK_BLE_AT_command_nrf52dk**
 
 1. **Description**
