@@ -1,4 +1,4 @@
-2 uarts usage example based on BLE peripheral
+2 uarts example based on BLE peripheral
 ##########################
 
 .. contents::
