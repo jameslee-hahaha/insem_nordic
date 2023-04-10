@@ -17,6 +17,7 @@ Development Kit : nRF52840 DK
 Notice
 ************
 수정된 파일은 아래와 같습니다.
+
 main.c
 
 sdk_config.h
