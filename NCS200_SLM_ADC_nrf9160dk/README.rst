@@ -5,9 +5,8 @@ ADC function on serial LTE modem example
    :local:
    :depth: 2
 
-이 예제는 PC에서 터미널 프로그램을 사용하여 nRF52 DK의 BLE 동작(Advertising interval, Tx power 등)을 변경하기 위한 프로젝트 입니다. 
-
-BLE 동작 변경을 위해 AT command를 사용하며 nRF52 DK로부터 AT command에 대한 response를 확인할 수 있으며 BLE 동작 변경은 Central 장치와 connection하지 않은 상태에서 가능하며 Central 장치와 connection이 되었을 경우 일반적인 BLE 장치로서 동작합니다.
+nRF9160 serial LTE modem example은 GPIO, TWI에 대한 AT command가 reference로 구성되어 있습니다. 이 example은 serial LTE modem에 ADC 기능이 추가로 필요한 사용자를 위해서 테스트로 구성한 샘플 코드 입니다. ADC function은 아래 devzone의 링크를 참조하여 구성하였습니다.
+(https://devzone.nordicsemi.com/f/nordic-q-a/65766/example-code-for-a-d)
 
 Requirements
 ************
