@@ -18,7 +18,7 @@
 
 1. **Description**
 
-     nRF9160 serial LTE modem example은 GPIO, TWI에 대한 AT command가 reference로 구성되어 있습니다. 이 example은 serial LTE modem에 ADC 기능이 추가로 필요한 사용자를 위해서 테스트로 구성한 샘플 코드 입니다.
+     nRF9160 serial LTE modem example은 GPIO, TWI에 대한 AT command가 reference로 구성되어 있습니다. 이 example은 serial LTE modem에 **ADC 기능이 추가로 필요**한 사용자를 위해서 테스트로 구성한 샘플 코드 입니다.
 
 2. **Reference example**
 
