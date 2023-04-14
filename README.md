@@ -10,7 +10,7 @@
 
 2. **Reference example**
 
-     NCS(nRF Connect SDK) BLE peripheral uart
+     NCS(nRF Connect SDK) 2.0.0 BLE peripheral uart
 
 
 ---
@@ -18,11 +18,11 @@
 
 1. **Description**
 
-     nRF9160 serial LTE modem example은 GPIO, TWI에 대한 AT command가 reference로 구성되어 있습니다. 이 example은 serial LTE modem에 **ADC 기능이 추가로 필요**한 사용자를 위해서 테스트로 구성한 샘플 코드 입니다.
+     nRF9160 serial LTE modem example은 nRF9160의 GPIO, TWI를 AT command를 이용하여 control할 수 있도록 reference가 구성되어 있습니다. 여기에 추가적으로 nRF9160의  ADC 기능을 AT command로 사용할 수 있도록 구성한 샘플 코드 입니다.
 
 2. **Reference example**
 
-     NCS(nRF Connect SDK) serial LTE modem
+     NCS(nRF Connect SDK) 2.0.0 serial LTE modem
 
 
 ---
@@ -37,7 +37,7 @@
 
 2. **Reference example**
 
-     NCS(nRF Connect SDK) serial LTE modem
+     NCS(nRF Connect SDK) 2.0.0 serial LTE modem
 
 
 ---
@@ -50,7 +50,7 @@
      
 2. **Reference example**
 
-     nRF5 SDK ble app uart
+     nRF5 SDK 17.1.0 ble app uart
      
      
 ---
@@ -64,7 +64,7 @@
      
 2. **Reference example**
 
-     nRF5 SDK ble app uart
+     nRF5 SDK 17.1.0 ble app uart
 
 
 ---
@@ -77,7 +77,7 @@
      
 2. **Reference example**
 
-     nRF5 SDK ble app uart
+     nRF5 SDK 17.1.0 ble app uart
 
 
 
