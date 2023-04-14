@@ -15,7 +15,7 @@ Requirements
 
 Software Delopment Kit : NCS 2.0.0
 
-Development Kit : nRF52 DK
+Development Kit : nRF9160 DK
 
 Avaiable AT commands
 ************
