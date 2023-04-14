@@ -20,8 +20,9 @@ Development Kit : nRF9160 DK
 Avaiable AT commands
 ************
 
-1. AT#XADC\r\n
-위 명령어를 입력하면 ADC 동작 후의 결과 값이 return됩니다.
+1. AT#XADC
+
+위 AT command를 입력하면 ADC 동작 후의 결과 값이 return됩니다.
 
 Testing
 ********************
