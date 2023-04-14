@@ -24,12 +24,5 @@ AT#XADC
 
 위 AT command를 입력하면 ADC 동작 후의 결과 값이 return됩니다.
 
-Testing
-********************
 
-nRF52 DK에 download한 후 아래 순서로 진행합니다.
-
-1. nRF52 DK를 USB로 PC와 연결 후 power on 합니다.
-#. PC에서 테라텀과 같은 터미널 프로그램 실행합니다.
-#. 터미널 입력창에서 AT command를 입력하여 테스트를 진행합니다. 
 
