@@ -20,36 +20,8 @@ Development Kit : nRF9160 DK
 Avaiable AT commands
 ************
 
-1. AT?\\r\\n : checks AT command mode
-#. AT+VER?\\r\\n : returns AT command version
-#. AT+ROLE?\\r\\n : return current BLE mode(peripheral)
-#. AT+ADVSTOP\\r\\n : stops BLE advertising
-#. AT+ADVSTART\\r\\n : start BLE advertising
-#. AT+ADVINT?\\r\\n : returns current advertising interval
-#. AT+TXPWR?\\r\\n : returns current tx power
-#. AT+NAME?\\r\\n : returns current BLE device name
-#. AT+SLEEP\\r\\n : enters system off mode after setup wake up
-
-Advertising interval을 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
-
-a. AT+ADVSTOP\\r\\n
-#. AT+ADVINT=xxxx\\r\\n : set advertising interval
-
-위 AT command 입력 후 변경된 Advertising interval로 Advertising이 다시 시작됩니다.
-
-Tx power를 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
-
-a. AT+ADVSTOP\\r\\n
-#. AT+TXPWR=+x\\r\\n or AT+TXPWR=-xx\\r\\n : set tx power
-
-위 AT command 입력 후 변경된 Tx power로 Advertising이 다시 시작됩니다.
-
-Device name을 변경하기 위해서는 아래 AT command를 순차적으로 입력합니다.
-
-a. AT+ADVSTOP\\r\\n
-#. AT+NAME=xxxxxx\\r\\n : set BLE device name
-
-위 AT command 입력 후 변경된 Device name으로 Advertising이 다시 시작됩니다.
+1. AT#XADC\r\n
+위 명령어를 입력하면 ADC 동작 후의 결과 값이 return됩니다.
 
 Testing
 ********************
