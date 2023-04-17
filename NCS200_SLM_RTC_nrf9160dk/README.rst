@@ -1,4 +1,4 @@
-ADC function on serial LTE modem example
+ function on serial LTE modem example
 ##########################
 
 .. contents::
