@@ -8,6 +8,7 @@ RTC function on serial LTE modem example
 이 project는 nRF9160 serial LTE modem example에 RTC 기능을 추가한 샘플 코드 입니다.
 
 nRF9160의 RTC는 다음 devzone 링크를 참조 하였습니다.
+
 (https://github.com/Rallare/fw-nrfconnect-nrf/tree/nrf9160_samples/samples/nrf9160/nrfx/rtc)
 
 Requirements
