@@ -41,6 +41,18 @@
 
 
 ---
+## **NCS200_SLM_RTC_nrf9160dk**
+
+1. **Description**
+
+     이 project는 nRF9160 serial LTE modem example에 RTC 기능을 추가한 샘플 코드 입니다.
+
+2. **Reference example**
+
+     NCS(nRF Connect SDK) 2.0.0 serial LTE modem
+
+
+---
 ## **nRF5SDK_BLE_2_uarts_nrf52840dk**
 
 1. **Description**
