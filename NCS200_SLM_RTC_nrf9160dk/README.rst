@@ -1,4 +1,4 @@
- function on serial LTE modem example
+RTC function on serial LTE modem example
 ##########################
 
 .. contents::
