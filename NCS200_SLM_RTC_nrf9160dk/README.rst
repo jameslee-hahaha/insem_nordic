@@ -18,12 +18,10 @@ Software Delopment Kit : NCS 2.0.0
 
 Development Kit : nRF9160 DK
 
-Avaiable AT commands
+Notice
 ************
 
-AT#XADC
-
-위 AT command를 입력하면 ADC 동작 후의 결과 값이 return됩니다.
+prj.conf 파일 외에 RTC관련 firmware 수정 부분은 CONFIG_FORCE_NRFX_MODULES를 참조하시면 됩니다. 
 
 
 
