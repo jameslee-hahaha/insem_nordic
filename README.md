@@ -45,7 +45,7 @@
 
 1. **Description**
 
-     이 project는 nRF9160 serial LTE modem example에 RTC 기능을 추가한 샘플 코드 입니다.
+     이 project는 nRF9160 serial LTE modem example에 **RTC 기능**을 추가한 샘플 코드 입니다.
 
 2. **Reference example**
 
