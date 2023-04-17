@@ -5,10 +5,10 @@ RTC function on serial LTE modem example
    :local:
    :depth: 2
 
-nRF9160 serial LTE modem example은 nRF9160의 GPIO, TWI를 AT command를 이용하여 control할 수 있도록 reference가 구성되어 있습니다.여기에 추가적으로 nRF9160의  ADC 기능을 AT command로 사용할 수 있도록 구성한 샘플 코드 입니다.
+이 project는 nRF9160 serial LTE modem example에 RTC 기능을 추가한 샘플 코드 입니다.
 
-nRF9160의  ADC는 다음 devzone 링크를 참조 하였습니다.
-(https://devzone.nordicsemi.com/f/nordic-q-a/65766/example-code-for-a-d)
+nRF9160의 RTC는 다음 devzone 링크를 참조 하였습니다.
+(https://github.com/Rallare/fw-nrfconnect-nrf/tree/nrf9160_samples/samples/nrf9160/nrfx/rtc)
 
 Requirements
 ************
