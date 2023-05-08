@@ -53,7 +53,7 @@
 
 
 ---
-## **NCS200_I2C_SPI_bitbang_nrf52840dk**
+## **NCS230_I2C_SPI_bitbang_nrf52840dk**
 
 1. **Description**
 
