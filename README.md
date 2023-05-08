@@ -53,6 +53,18 @@
 
 
 ---
+## **NCS200_I2C_SPI_bitbang_nrf52840dk**
+
+1. **Description**
+
+     이 project는 **Software I2C, SPI를 사용**하기 위한 샘플 코드 입니다.
+
+2. **Reference example**
+
+     NCS(nRF Connect SDK) 2.3.0
+
+
+---
 ## **nRF5SDK_BLE_2_uarts_nrf52840dk**
 
 1. **Description**
