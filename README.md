@@ -53,6 +53,18 @@
 
 
 ---
+## **NCS230_BLE_Throughput_Peripheral_Uart_nrf52840dk**
+
+1. **Description**
+
+     이 project는 **Bluetooth peripheral uart example을 기반으로 central장치와의 BLE throughput을 향상**시키기 위해서 구성한 샘플 코드 입니다.
+
+2. **Reference example**
+
+     NCS(nRF Connect SDK) 2.3.0 BLE peripheral uart
+
+
+---
 ## **NCS230_I2C_SPI_bitbang_nrf52840dk**
 
 1. **Description**
