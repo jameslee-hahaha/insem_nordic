@@ -48,12 +48,12 @@
  * This application uses the @ref srvlib_conn_params module.
  */
 
-// STEP_1 Log Disable // sdk_config.h
+// STEP_1 LED Disable 
 // STEP_2 idle Sleep
 // STEP_3 DCDC Mode enable
 // STEP_4 Advertising interval
 // STEP_5 Non Connectable Advertising // ble_advertising.c
-// STEP_6 Connection Parameter (Connection interval, Slave Latency, Supervisor timeout)
+// STEP_6 Connection Parameter (Connection interval, Slave Latency)
 // STEP_7 TX Power
 // STEP_8 Advertising Stop / Start
 // STEP_9 System Off Sleep
@@ -657,7 +657,12 @@ static void buttons_leds_init(bool * p_erase_bonds)
 {
     bsp_event_t startup_event;
 
-    uint32_t err_code = bsp_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS, bsp_event_handler);
+
+    //uint32_t err_code = bsp_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS, bsp_event_handler);
+    //APP_ERROR_CHECK(err_code);
+
+    // STEP_1 LED Disable
+    uint32_t err_code = bsp_init(BSP_INIT_BUTTONS, bsp_event_handler);
     APP_ERROR_CHECK(err_code);
 
     err_code = bsp_btn_ble_init(NULL, &startup_event);
