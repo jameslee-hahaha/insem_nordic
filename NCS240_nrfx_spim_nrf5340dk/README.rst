@@ -1,33 +1,16 @@
-.. _hello_world:
+nrfx spim function example
+##########################
 
-Hello World
-###########
+.. contents::
+   :local:
+   :depth: 2
 
-Overview
-********
+Nordic에서 제공하는 SPIM driver를 사용하는 example 입니다. nrfx SPIM을 사용하여 nRF5340 DK의 MXIC Serial flash의 RDID 진행하도록 구성한 샘플 코드 입니다.
 
-A simple sample that can be used with any :ref:`supported board <boards>` and
-prints "Hello World" to the console.
 
-Building and Running
-********************
+Requirements
+************
 
-This application can be built and executed on QEMU as follows:
+Software Delopment Kit : NCS 2.4.0
 
-.. zephyr-app-commands::
-   :zephyr-app: samples/hello_world
-   :host-os: unix
-   :board: qemu_x86
-   :goals: run
-   :compact:
-
-To build for another board, change "qemu_x86" above to that board's name.
-
-Sample Output
-=============
-
-.. code-block:: console
-
-    Hello World! x86
-
-Exit QEMU by pressing :kbd:`CTRL+A` :kbd:`x`.
+Development Kit : nRF5340 DK
