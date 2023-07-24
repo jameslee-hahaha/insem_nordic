@@ -1,4 +1,4 @@
-nrfx spim function example
+zephyr spim function example
 ##########################
 
 .. contents::
